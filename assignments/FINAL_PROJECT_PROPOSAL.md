@@ -38,10 +38,13 @@ Identify the metrics you will use to evaluate your model and explain why they ar
 
 ### Rubric (10 points)
 
-| Category | Weight | Excellent | Satisfactory | Unsatisfactory |
-|----------|--------|-----------|--------------|----------------|
-| Problem Definition & Use Case | 2 pts | Clearly articulates problem, required output, and target users; well-scoped and relevant | Problem defined but required output or target user unclear | Problem vague; no clear output specification |
-| Technical Justification | 3 pts | Clear logical chain from problem to method; accurately describes what model learns; identifies realistic failure modes | Some justification but gaps in reasoning; failure modes generic | No justification; task type inappropriate for problem |
-| Methodological Precedent | 2 pts | 3+ rigorous sources with thorough summaries; clear connection to proposed approach | Fewer than 3 sources or superficial summaries | Missing or irrelevant sources |
-| Data Plan | 1.5 pts | Dataset clearly appropriate for task; feasible backup plan | Dataset identified but fit to task unclear | Dataset inappropriate or not identified |
-| Modeling Approach & Evaluation | 1.5 pts | Clear architecture with baseline; appropriate metrics justified | Model and metrics described but weakly justified | Approach unclear; no baseline; metrics inappropriate |
+
+| Category                       | Weight  | Excellent                                                                                                              | Satisfactory                                                    | Unsatisfactory                                        |
+| ------------------------------ | ------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------------- |
+| Problem Definition & Use Case  | 2 pts   | Clearly articulates problem, required output, and target users; well-scoped and relevant                               | Problem defined but required output or target user unclear      | Problem vague; no clear output specification          |
+| Technical Justification        | 3 pts   | Clear logical chain from problem to method; accurately describes what model learns; identifies realistic failure modes | Some justification but gaps in reasoning; failure modes generic | No justification; task type inappropriate for problem |
+| Methodological Precedent       | 2 pts   | 3+ rigorous sources with thorough summaries; clear connection to proposed approach                                     | Fewer than 3 sources or superficial summaries                   | Missing or irrelevant sources                         |
+| Data Plan                      | 1.5 pts | Dataset clearly appropriate for task; feasible backup plan                                                             | Dataset identified but fit to task unclear                      | Dataset inappropriate or not identified               |
+| Modeling Approach & Evaluation | 1.5 pts | Clear architecture with baseline; appropriate metrics justified                                                        | Model and metrics described but weakly justified                | Approach unclear; no baseline; metrics inappropriate  |
+
+
