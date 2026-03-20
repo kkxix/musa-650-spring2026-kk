@@ -61,7 +61,7 @@ Obtaining accurately labeled training data is a barrier in flood inundation mapp
  2. Study Time Period
 The analysis is conducted using a reference date of March 7, 2026. However, due to the ongoing rainy season and the uncertainty of near-future flood conditions, a historical flood event was selected for reliable analysis.
 
-Specifically, we focus on a documented flood event from November 30, 2023[3], using data from Maxar Open Data Kenya Flooding[2] as a verified reference. For the flood event on November 30, 2023, a pair of pre- and post-event Sentinel-1 SAR images was selected to enable change detection analysis. The pre-event image was acquired on November 27, 2023, while the post-event image was acquired on December 2, 2023. These two observations were chosen as the closest available acquisitions surrounding the flood event, ensuring a short temporal interval of five days. This event-proximate selection minimizes the influence of non-flood-related factors, such as seasonal vegetation dynamics, soil moisture variation, and other landscape changes unrelated to the flood event.By reducing temporal variability, this approach improves the reliability of SAR backscatter change detection and helps isolate flood-induced surface changes from other environmental noise.
+Specifically, we focus on a documented flood event from November 30, 2023, using data from Maxar Open Data Kenya Flooding as a verified referenc (Hochet-Bodin, 2023; STAC Browser, 2024). For the flood event on November 30, 2023, a pair of pre- and post-event Sentinel-1 SAR images was selected to enable change detection analysis. The pre-event image was acquired on November 27, 2023, while the post-event image was acquired on December 2, 2023. These two observations were chosen as the closest available acquisitions surrounding the flood event, ensuring a short temporal interval of five days. This event-proximate selection minimizes the influence of non-flood-related factors, such as seasonal vegetation dynamics, soil moisture variation, and other landscape changes unrelated to the flood event.By reducing temporal variability, this approach improves the reliability of SAR backscatter change detection and helps isolate flood-induced surface changes from other environmental noise.
 
 ### Data 
 
@@ -106,7 +106,7 @@ This project formulates flood detection as a bi-temporal semantic segmentation p
 
 #### Baseline
 
-As a simple baseline, this project will first implement a threshold-based flood mapping approach using changes in Sentinel-1 backscatter between pre-event and post-event imagery. Specifically, flood candidates will be identified based on differences in VV and VH backscatter values before and after the flood event. This approach provides a transparent and easily interpretable reference against which the performance of deep learning models can be evaluated. The implementation follows established workflows, particularly the recommended practice developed by UN-SPIDER in Google Earth Engine for SAR-based flood mapping[4].
+As a simple baseline, this project will first implement a threshold-based flood mapping approach using changes in Sentinel-1 backscatter between pre-event and post-event imagery. Specifically, flood candidates will be identified based on differences in VV and VH backscatter values before and after the flood event. This approach provides a transparent and easily interpretable reference against which the performance of deep learning models can be evaluated. The implementation follows established workflows, particularly the recommended practice developed by UN-SPIDER in Google Earth Engine for SAR-based flood mapping (United Nations, 2020).
 
 #### Deep Learning Model
 
@@ -151,8 +151,6 @@ While these approaches do not replace fully labeled validation datasets, they pr
 
 ## References
 
-“Step-by-Step: Recommended Practice: Flood Mapping and Damage Assessment Using Sentinel-1 SAR Data in Google Earth Engine | UN-SPIDER Knowledge Portal.” Accessed March 20, 2026. https://un-spider.org/advisory-support/recommended-practices/recommended-practice-google-earth-engine-flood-mapping/step-by-step.
-
 Bentivoglio, Roberto, Elvin Isufi, Sebastian Nicolaas Jonkman, and Riccardo Taormina. “Deep Learning Methods for Flood Mapping: A Review of Existing Applications and Future Research Directions.” Hydrology and Earth System Sciences 26, no. 16 (2022): 4345–78. https://doi.org/10.5194/hess-26-4345-2022.
 
 Bonafilia, Derrick, Beth Tellman, Tyler Anderson, and Erica Issenberg. “Sen1Floods11: A Georeferenced Dataset to Train and Test Deep Learning Flood Algorithms for Sentinel-1.” 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), June 2020, 835–45. https://doi.org/10.1109/CVPRW50498.2020.00113.
@@ -163,8 +161,10 @@ Nemni, Edoardo, Joseph Bullock, Samir Belabbes, and Lars Bromley. “Fully Convo
 
 Peng, Bo, Zonglin Meng, Qunying Huang, and Caixia Wang. “Patch Similarity Convolutional Neural Network for Urban Flood Extent Mapping Using Bi-Temporal Satellite Multispectral Imagery.” Remote Sensing 11, no. 21 (2019): 2492. https://doi.org/10.3390/rs11212492.
 
+United Nations. “Step-by-Step: Recommended Practice: Flood Mapping and Damage Assessment Using Sentinel-1 SAR Data in Google Earth Engine | UN-SPIDER Knowledge Portal.” 2020. https://un-spider.org/advisory-support/recommended-practices/recommended-practice-google-earth-engine-flood-mapping/step-by-step.
+
 Winter, Jospeh, and Richard Kagoe. “Kenya Floods Leave 66 Dead, as Heavy Rains Continue in Nairobi.” March 15, 2026. https://www.bbc.com/news/articles/cz6e5eng03yo.
 
-STAC Browser. “105001003B003900 - 6450076537198450630.” Accessed March 20, 2026. https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/Kenya-Flooding-May24/ard/acquisition_collections/105001003B003900_collection.json?.language=en.
+STAC Browser. “105001003B003900.” 2024. Accessed March 20, 2026. https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/Kenya-Flooding-May24/ard/acquisition_collections/105001003B003900_collection.json?.language=en.
 
 STAC Browser. “Maxar-Opendata.” Accessed March 20, 2026. https://radiantearth.github.io/stac-browser/#/external/maxar-opendata.s3.amazonaws.com/events/catalog.json?.language=en.
