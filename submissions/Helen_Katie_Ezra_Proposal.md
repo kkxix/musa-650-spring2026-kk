@@ -13,6 +13,7 @@ Nairobi, a city of about 5.8 million inhabitants is one of Africa's fastest grow
 We further narrow our study region to Nairobi City given its relevance to the central business district.
 
 ![Population Density Heatmap](/submissions/population.jpg)
+
 Map of study area with Population density heatmap
 
 ## Technical Justification
