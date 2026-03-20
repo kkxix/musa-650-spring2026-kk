@@ -39,6 +39,9 @@ dependencies = [
     "xgboost>=3.1.2",
     "torch>=2.9.1",
     "torchvision>=0.24.1",
+    # Needed for Week 08 MLP/CNN labs (uses both `import keras` and `tensorflow as tf`)
+    "tensorflow>=2.16.1,<3",
+    "keras>=3.0.0,<4",
     "vulture>=2.14",
     "nbqa>=1.9.1",
     "black>=26.1.0",
