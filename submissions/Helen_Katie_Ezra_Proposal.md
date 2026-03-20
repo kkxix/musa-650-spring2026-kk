@@ -12,6 +12,9 @@ Nairobi, a city of about 5.8 million inhabitants is one of Africa's fastest grow
 
 We further narrow our study region to Nairobi City given its relevance to the central business district.
 
+![Population Density Heatmap](/submissions/population.jpg)
+Map of study area with Population density heatmap
+
 ## Technical Justification
 
 68% of the world population is projected to live in urban areas by 2050. Infrastructure and early
@@ -27,6 +30,8 @@ Our choice is a segmentation model - as relates to floods. We intend to employ a
 
 This is tied to the objective of quantifying the scope and scale of environmental degradation. To the contrary, a classification based approach for example would identify what is a flood - this will provide little useful information. Regression based approaches would be useful if we sought to perform future forecasts - which is not in line with what we seek to achieve.
 
+![Flood Image](/submissions/flood2.png)
+Nairobi Floods March 2026
 
 ## Challenges 
 
